@@ -1,0 +1,12 @@
+php artisan make:filament-relation-manager TagsResource posts title
+                                           ↑            ↑     ↑
+                                      اسم الـ Resource  اسم الـ relationship  الـ column اللي يتعرض
+
+
+php artisan make:filament-relation-manager {Resource} {relationship} {titleAttribute}
+
+{Resource}        → اسم الـ Resource اللي هتضيف فيه الـ relation
+{relationship}    → اسم الـ method في الـ Model (posts, tags, comments)
+{titleAttribute}  → الـ column اللي يتعرض في الجدول (title, name, email)
+
+
